@@ -116,9 +116,9 @@
 
 
 // 11 - Accept the three sides of triangle and calculate the area using herons formula.
-let side1 = 10;
-let side2 = 20;
-let side3 = 30;
-let s = (side1 + side2 + side3) / 2;  //semiPerimeter formula ->  (a+b+c)/2
-let area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-console.log(`Area of triangle = ${area}`);  
+var side1 = 5; 
+var side2 = 6; 
+var side3 = 7; 
+var s = (side1 + side2 + side3) / 2;  //semiPerimeter formula ->  (a+b+c)/2
+var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+console.log(area);
