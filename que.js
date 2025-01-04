@@ -122,3 +122,17 @@ var side3 = 7;
 var s = (side1 + side2 + side3) / 2;  //semiPerimeter formula ->  (a+b+c)/2
 var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
 console.log(area);
+
+// ***************************** pattern **********************************
+// 56- Right Triangle - Star
+// 	*
+// 	* *
+// 	* * *
+// 	* * * *
+// 	* * * * *
+for(j=0; j<5; j++){
+	let pattern = "";
+	for(i=0; i<5; i++){
+		pattern = "* "
+	}
+}
