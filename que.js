@@ -133,6 +133,20 @@ console.log(area);
 for(j=0; j<5; j++){
 	let pattern = "";
 	for(i=0; i<5; i++){
-		pattern = "* "
+		pattern += "* ";
+	}
+}
+
+// 57- Right Triangle - Number
+// 	1
+// 	1 2
+// 	1 2 3 
+// 	1 2 3 4
+// 	1 2 3 4 5
+
+for(j = 0; j<=5; j++){
+	let pattern = "";
+	for(i = 0; i<=j; i++){
+		pattern += i + " ";
 	}
 }
