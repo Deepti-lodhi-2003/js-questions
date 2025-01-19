@@ -27,8 +27,9 @@
 // 4- Accept the User's name, age and print in following manner
 // 	Ex - Hello Shery, you are 12 years old.
 // let name = "Deep";
-// let age = 12;
-// console.log(`Hello ${name}, you are ${age} years old.`);
+// let age = 20;
+// console.log(`Hello ${name}`);
+// console.log(`you are ${age} years old`);
 
 
 
@@ -116,12 +117,12 @@
 
 
 // 11 - Accept the three sides of triangle and calculate the area using herons formula.
-var side1 = 5; 
-var side2 = 6; 
-var side3 = 7; 
-var s = (side1 + side2 + side3) / 2;  //semiPerimeter formula ->  (a+b+c)/2
-var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
-console.log(area);
+// var side1 = 5; 
+// var side2 = 6; 
+// var side3 = 7; 
+// var s = (side1 + side2 + side3) / 2;  //semiPerimeter formula ->  (a+b+c)/2
+// var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
+// console.log(area);
 
 // ***************************** pattern **********************************
 // 56- Right Triangle - Star
@@ -130,13 +131,13 @@ console.log(area);
 // 	* * *
 // 	* * * *
 // 	* * * * *
-for(j=0; j<5; j++){
-	let pattern = "";
-	for(i=0; i<5; i++){
-		pattern += "* ";
-	}
-	console.log(pattern);
-}
+// for(j=0; j<5; j++){
+// 	let pattern = "";
+// 	for(i=0; i<5; i++){
+// 		pattern += "* ";
+// 	}
+// 	console.log(pattern);
+// }
 
 // 57- Right Triangle - Number
 // 	1
@@ -144,11 +145,101 @@ for(j=0; j<5; j++){
 // 	1 2 3 
 // 	1 2 3 4
 // 	1 2 3 4 5
+// for(j = 0; j<=5; j++){
+// 	let pattern = "";
+// 	for(i = 0; i<=j; i++){
+// 		pattern += i + " ";
+// 	}
+// 	console.log(pattern);
+// }
 
-for(j = 0; j<=5; j++){
-	let pattern = "";
-	for(i = 0; i<=j; i++){
-		pattern += i + " ";
-	}
-	console.log(pattern);
+// 58- Right Triangle - Alphabet
+// 	A
+// 	A B
+// 	A B C
+// 	A B C D
+// 	A B C D E
+// for(j=0; j<=5; j++){
+// 	let pattern = "";
+// 	for(i=65; i<=64+j; i++){
+// 		pattern += String.fromCharCode(i) + " ";
+// 	}
+// 	console.log(pattern);
+// }
+
+// 59- Inverted Right Triangle
+// 	* * * * *
+// 	* * * *
+// 	* * *
+// 	* *
+// 	*
+// for(j=5; j>=0; j--){
+//     let pattern = "";
+//     for(i=0; i<j; i++){
+// pattern += "* ";
+// 	}
+// 	    console.log(pattern);
+// }
+
+// 60- Mirrored Right Triangle 
+// 	        *
+// 	      * *
+// 	    * * *
+// 	  * * * *
+// 	* * * * *
+// for(j=0; j<5; j++){
+// 	let pattern = "";
+// 	for(i=0; i<5-j; i++){
+// 		pattern += "* ";	
+// 		}
+// 		console.log(pattern);
+// 		}
+
+
+// 65- V - Min Height = 3
+// 		*       * 
+// 		 *     *  
+// 		  *   *   
+// 		   * *    
+// 			* 		
+
+
+
+
+// 67- Hollow Rectangle
+// *****
+// *     *
+// *     *
+// *     *
+// *****
+// for(j=0; j<5; j++){
+// 	let pattern = "";
+// 	for(i=0; i<5; i++){
+// 		if(i==0 || i==4 || j==0 || j==4){
+// 			pattern += "*";
+// 			}else{
+// 				pattern += " ";
+// 				}
+// 				}
+// 				console.log(pattern);
+// 				}
+
+				
+
+// 10- Take 3 int inputs from user and check and print the result.
+// all are equal
+// any of two are equal
+// ( use && || ) 
+
+let a = parseInt("enter first input");
+let b = parseInt("enter second input");
+let c = parseInt("enter third input");
+if(a===b && b===c){
+  console.log("all are equal");
 }
+else if(a===b || b===c || a===c){
+	console.log("any of two are equal");
+}
+else{
+   console.log("all are not equal");
+};
